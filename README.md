@@ -1,3 +1,7 @@
+This is a fork of a fork from [GitLab - ominiauth-salesforce](https://gitlab.com/gitlab-org/gitlab/-/tree/master/vendor/gems/omniauth-salesforce)
+
+"Original" readme below:
+
 # omniauth-salesforce
 
 This is fork of [omniauth-salesforce](https://github.com/realdoug/omniauth-salesforce) to support:
@@ -34,17 +38,17 @@ end
 
 ```ruby
 use OmniAuth::Builder do
-    provider :salesforce, 
-             ENV['SALESFORCE_KEY'], 
+    provider :salesforce,
+             ENV['SALESFORCE_KEY'],
              ENV['SALESFORCE_SECRET']
-    provider OmniAuth::Strategies::SalesforceSandbox, 
-             ENV['SALESFORCE_SANDBOX_KEY'], 
+    provider OmniAuth::Strategies::SalesforceSandbox,
+             ENV['SALESFORCE_SANDBOX_KEY'],
              ENV['SALESFORCE_SANDBOX_SECRET']
-    provider OmniAuth::Strategies::SalesforcePreRelease, 
-             ENV['SALESFORCE_PRERELEASE_KEY'], 
+    provider OmniAuth::Strategies::SalesforcePreRelease,
+             ENV['SALESFORCE_PRERELEASE_KEY'],
              ENV['SALESFORCE_PRERELEASE_SECRET']
-    provider OmniAuth::Strategies::DatabaseDotCom, 
-             ENV['DATABASE_DOT_COM_KEY'], 
+    provider OmniAuth::Strategies::DatabaseDotCom,
+             ENV['DATABASE_DOT_COM_KEY'],
              ENV['DATABASE_DOT_COM_SECRET']
 end
 ```
